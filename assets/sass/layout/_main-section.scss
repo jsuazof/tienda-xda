@@ -1,0 +1,142 @@
+/* Hero Section
+ ========================================================================== */
+
+.hero-section.container {
+    padding: 0;
+}
+
+.hero-section__featured-image {
+    background-image: url('../../assets/img/foto-main.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include relative-converter(height, rem, 200, 16);
+    width: 100vw;
+    margin-top: 3rem;
+}
+
+.hero-section__main-content {
+    padding: 1.3rem 1.3rem 1.3rem 1.3rem;
+
+    h1 {
+        margin: 0;
+        @include relative-converter(font-size, rem, $xx-large, 16);
+    }
+
+}
+
+@media (min-width:350px)  {
+    .hero-section__imagen-desktop {
+        display: none;
+    }
+
+    .hero-section__main-content {
+        margin-left: 2em;
+        width: 86%;
+
+        h1 {
+            margin: 0;
+            @include relative-converter(font-size, rem, $xx-large, 16);
+            width: 86%
+        }
+
+        p {
+            @include relative-converter(font-size, rem,$small,16);
+            color: $granite-gray;
+                width: 86%;
+        }
+    }
+}
+
+@media (min-width:576px){
+    .hero-section__featured-image {
+        @include relative-converter(height,rem,300,16);
+        width: 100vw;
+        margin-top: 3rem;
+    }
+
+    .hero-section__imagen-desktop {
+        display: none;
+    }
+
+    .hero-section__main-content {
+       
+        width: 75%;
+
+        h1 {
+            margin: 0;
+            @include relative-converter(font-size, rem,$xx-large, 16);
+            width: 80%
+        }
+
+        p {
+            @include relative-converter(font-size,rem,$x-small, 16);
+            color: $granite-gray;
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width:769px) {
+    .hero-section__featured-image {
+        @include relative-converter(height,rem, 350,16);
+        width: 100vw;
+        margin-top: 3rem;
+    }
+
+    .hero-section__imagen-desktop {
+        display: none;
+    }
+
+    .hero-section__main-content {
+        margin-left: 2em;
+        width: 75%;
+
+        h1 {
+            margin: 0;
+            @include relative-converter(font-size,rem, $xxx-large, 16);
+            width: 70%;
+        }
+
+        p {
+            
+            color: $granite-gray;
+            @include relative-converter(font-size,rem,$small,16);
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width:993px) {
+    .hero-section__featured-image {
+        @include relative-converter(height,rem, 800,16);
+        width: 100%;
+        margin-top: 3rem;
+        display: grid;
+        grid-column: 6 / 13;
+        grid-row: 1 / 2;
+    }
+
+    .hero-section__main-content {
+        margin-top: 7rem;
+        margin-left: 3rem;
+        width: 95%;
+
+        h1 {
+            margin: 0;
+            @include relative-converter(font-size,rem, $xxx-large, 16);
+            width: 100%;
+        }
+
+        p {
+            @include relative-converter(font-size, rem, $medium, 16);
+            color: $granite-gray;
+            width: 100%;
+        }
+    }
+
+    .grid_column {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+}

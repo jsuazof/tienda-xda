@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Jorge Suazo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Suazo" />
+    <!--Goolge Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!--CDN Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!--mi CSS-->
     <link rel="stylesheet" href="./assets/css/main.css">
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <title>Tienda XDA</title>
 </head>
+
 <body>
+    <!--Inicio Header-->
     <header class="header">
-        <div class="container">    
-            <nav class="navbar">
-                <a class="navbar__brand" href="#"><span class="navbar__brand--icon">XDA</span></a>
-                <!--
-                <select name="cars" id="cars">
-                    <option value="Mujer">Mujer</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Accesorios">Accesorios</option>
-                    <option value="Blog">Blog</option>
-                </select>
-                -->
-                <ul class="menu" >
-                    <li><a class="menu__txt" href="#">Mujer</a></li>
-                    <li><a class="menu__txt"href="#">Hombre</a></li>
-                    <li><a class="menu__txt"href="#">Accesorios</a></li>
-                    <li><a class="menu__txt"href="#">Blog</a></li>
-                </ul>    
-            </nav>
-        </div>
+        <nav class="nav row">
+            <div class="nav__logo">
+                <h6 class="nav__logo--font-size">XDA</h6>
+            </div>
+            <div class="collapsible">
+                <input type="checkbox" id="menu">
+                <label for="menu"><i class="fas fa-bars"></i></label>
+                <div class="nav__container">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#">Mujer</a></li>
+                        <li class="nav__item"><a href="#">Hombre</a></li>
+                        <li class="nav__item"><a href="#">Accesorios</a></li>
+                        <li class="nav__item"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="main"> 
-        <section class="title">
-            <div class="title__txt">
-                <h1>
-                Lorem ipsum<br>AD VALOREM
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae eligendi cumque excepturi consequuntur. Ullam, dolorem dolores velit quidem rerum repudiandae a nostrum blanditiis sed nesciunt. Eius cumque aliquid inventore.</p>
-                <button type="button" class="button">
-                  Ir a tienda  
-                </button>
+    <!--Fin Header-->
+
+    <!--Inicio Hero-Section-->
+    <main>
+        <section class="hero-section">
+            <div class="row">
+                <div class="hero-section__featured-image"> </div>
+                <div class="hero-section__container grid_column col-xs-12 ">
+                    <div class="hero-section__main-content col-xs-12 col-lg-6">
+                        <h1>Lorem ipsum ad valorem</h1>
+                        <p class="col-lg-6">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque Ipsa.
+                        </p>
+                        <div class="hero-section__button">
+                            <button type="button" class="button button_primary">Ir a la tienda</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="main__img">
-            <img src="./assets/images/imagen1.png" alt="">
-        </div>
-    </main> 
-    <footer class="footer">
-        <h2>Newsletter</h2>
-        <div>
-            <input class="footer__email" type="email" placeholder="Ingresa tu correo electrónico"><span class="footer__email--txt">Correo Electrónico</span> 
-            <input class="footer__botton" type="submit" value="Suscribir">
-          </div>
-    </footer>
+    <!--Fin Hero-Section-->
+        <form class="form">
+            <div class="row">
+                <div>
+                    <div class="form__div">
+                        <h2 class="form__tittle">Newsletter</h2>
+                        <label for="inputEmail">Correo Electrónico</label>
+                        <input type="email" class="form__email" id="inputEmail" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    <div class="form__button">
+                        <button type="button" class="form__button--font">Suscribir</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
+
 </html>

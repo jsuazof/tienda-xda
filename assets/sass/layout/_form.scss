@@ -1,0 +1,183 @@
+.form {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: $smoky-black;
+    color: $white;
+    padding: 1rem 2rem;
+    font-weight: $regular;
+    width: 90vw;
+    height: 10em;
+    &__tittle {
+        @include relative-converter(font-size, rem, $xx-large, 16);
+        margin: 0;
+    }
+    &__div {
+        display: inline-block;
+        font-family: $old-standard-tt;
+        @include relative-converter(font-size, rem, $small, 16);
+        margin-top: 0.5rem;
+        width: 70%;
+    }
+    &__email {
+        display: block;
+        font-family: $raleway;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
+        width: 70vw;
+    }
+}
+
+@media (min-width:394px){
+    .form {
+        margin-top: 1em;
+        width: 95%;
+        &__div {
+            margin-left: 2em;
+            width: 80%;
+        }
+        &__email {
+            width: 65vw;
+        }
+    }
+}
+
+@media (min-width:471px){
+    .form {
+        margin-top: 1em;
+        width: 95%;
+        &__div {
+            margin-left: 2em;
+            width: 80%;
+        }
+        &__email {
+            width: 68vw;
+        }
+    }
+}
+
+@media (min-width:532px){
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__div {
+            margin-left: 2em;
+            width: 90%;
+        }
+        &__email {
+            padding: 0.5em;
+            width: 78vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:641px){
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__div {
+            width: 80%;
+        }
+        &__email {
+            padding: 0.5em;
+            width: 75vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:721px){
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        display: grid;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__div {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__email {
+            padding: 0.5em;
+            width: 78vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:846px){
+    .form {
+        margin-top: 3em;
+        width: 95%;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__div {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__email {
+            padding: 0.5em;
+            width: 85vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:993px) {
+    .form {
+        margin-top: 3em;
+        width: 38%;
+        display: grid;
+        grid-template-columns: auto 100px;
+        top: 40em;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__div {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__email {
+            padding: 0.5em;
+            width: 25vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .form {
+        margin-top: 3em;
+        width: 40%;
+        display: grid;
+        grid-template-columns: auto 100px;
+        top: 40em;
+        &__tittle {
+            @include relative-converter(font-size, rem, $x-large, 16);
+            margin: 0;
+        }
+        &__div {
+            width: 100%;
+            margin-left: 2rem;
+        }
+        &__email {
+            padding: 0.5em;
+            width: 25vw;
+            @include relative-converter(font-size, rem, $x-small, 16);
+        }
+    }
+}
